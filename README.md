@@ -47,18 +47,6 @@ npm install
 ```
 Esto instalará todas las librerías necesarias para el proyecto.
 
-### 3. Configurar variables de entorno
-Crea un archivo **.env** en la raíz del proyecto y agrega la URL del backend:
-```sh
-VITE_API_URL=http://localhost:8080/api
-```
 
-### 4. Ejecutar la aplicación en modo desarrollo
-```sh
-npm run dev
-```
-Esto iniciará el servidor de desarrollo en `http://localhost:5173/`.
-
----
 
 
