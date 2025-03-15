@@ -48,5 +48,10 @@ npm install
 Esto instalará todas las librerías necesarias para el proyecto.
 
 
+4. Ejecutar la aplicación en modo desarrollo
+```sh
+npm run dev
+```
+Esto iniciará el servidor de desarrollo.
 
 
