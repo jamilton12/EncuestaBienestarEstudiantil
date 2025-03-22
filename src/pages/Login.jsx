@@ -1,4 +1,6 @@
 import { useState } from "react"
+import './login.css'
+  
 export function Login({ setUser }) {
     const [nombre, setNombre] = useState("")
     const [contraseña, setContraseña] = useState("")
@@ -22,7 +24,7 @@ export function Login({ setUser }) {
    
     return (
 
-        <section>
+        <section className="constainer">
 
             <h1>Inicio de sesión</h1>
 

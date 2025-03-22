@@ -6,20 +6,12 @@ import './App.css'
 function App() {
     const [user, setUser] = useState([])
     return (
-        <>
-        <header className="title"> 
-        <p className="title-2">Bienestar </p>
-        <p className="title-2">Estudiantil </p>
-        </header>
-        <div className="App" >
-            {
-               
-                !user.length > 0
-                    ? <Login setuser={setUser} />
-                    : < Home user={user} setUser={setUser} />
+        <main className="App">
+            {!user.length > 0
+                ? <Login setuser={setUser} />
+                : < Home user={user} setUser={setUser} />
             }
-        </div >
-        </>
+        </main>
     )
 }
 export default App;

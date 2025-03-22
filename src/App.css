@@ -1,9 +1,17 @@
 .body {
     position: absolute;
-    width: 706px;
-    height: 998px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
     background: #F5F3F5;
     color: aqua;
+}
+:root {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
@@ -13,36 +21,33 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 40px;
     padding: 20px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 input {
     width: 300px;
     padding: 10px 0;
-    margin: 10px 0;
     border: none;
     border-radius: 5px;
     display: flex;
-
 }
 
 .App {
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    border-radius: 30px;
-    background: rgba(70, 108, 168, 0.7);
-    backdrop-filter: blur(8px);
-    transition: opacity 0.3s ease-in-out;
-    box-shadow: 2px black;
-    padding-left: 30px;
+    justify-content: center;
     font-family: Arial, sans-serif;
-    margin-left: 400px;
-    
 }
 
 button {
@@ -72,17 +77,8 @@ h3.inp {
     height: 100px;
     background-color: #1B264Fed;
     color: #ffffff;
-    margin-bottom: 200px;
     justify-content: center;
     font: 1em sans-serif;
     padding-top: 20px; 
 }
-.title-2{
-    display: grid;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: left;
-    position:;
-    margin: 0;
-}
+
