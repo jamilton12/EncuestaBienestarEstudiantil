@@ -1,6 +1,6 @@
 import { useState } from "react"
-import './login.css'
-  
+import { Input } from "../components/input/input"
+
 export function Login({ setUser }) {
     const [nombre, setNombre] = useState("")
     const [contraseña, setContraseña] = useState("")
@@ -24,27 +24,16 @@ export function Login({ setUser }) {
    
     return (
 
-        <section className="constainer">
+        <section className="bg-blue-200/50 drop-filter backdrop-blur-lg w-1/4 p-4 rounded-lg shadow-lg">
 
-            <h1>Inicio de sesión</h1>
+            <h1 className="font-bold text-2xl">Inicio de sesión</h1>
 
-            <form className="login"
+            <form className="flex flex-col gap-4"
                 onSubmit={handleSubmit}
             >
-                <h3  className="inp">Correo</h3 >
-                <input
-                    type="text"
-                    value={nombre}
-                    onChange={e => setNombre(e.target.value)}
-                />
-                <h3 className="inp">Contraseña</h3>
-                <input
-
-                    type="password"
-                    value={contraseña}
-                    onChange={e => setContraseña(e.target.value)}
-                />
-                <button>Login</button>
+                <Input label="Nombre" type="text" value={nombre} onChange={e => setNombre(e.target.value)} />
+                <Input label="Contraseña" type="text" value={contraseña} onChange={e => setNombre(e.target.value)} />
+                <button className="hover:scale-105 bg-blue-400 text-white py-2 rounded">Login</button>
             </form>
             {error && <p>Todo los campos son obligatorios</p>}
         </section >
